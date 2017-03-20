@@ -1,0 +1,14 @@
+<p>
+  Phone List:
+</p>
+<div class="errorMessage" *ngIf='errorMessage'>
+  {{errorMessage}}
+</div>
+<ul>
+  <li *ngFor='let phone of phones' [routerLink]="['phone',phone._id]">
+    <img [src]="phone.image" alt="phone image">
+    <h3>{{phone.brand}}</h3>
+    <p>{{phone.name}}</p>
+    
+  </li>
+</ul>

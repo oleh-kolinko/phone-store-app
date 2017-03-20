@@ -1,0 +1,10 @@
+a{
+  text-decoration: none;
+  color: #3ad045;
+  padding: 15px;
+  border-radius: 2px;
+  text-transform: uppercase;
+}
+a:hover{
+  background-color:  #f9f9f9;
+}

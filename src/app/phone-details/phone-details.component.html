@@ -1,0 +1,19 @@
+<h2>Phone details:</h2>
+<div class="container" *ngIf='phone'>
+  <div class="phone-thumbnail">
+    <img src="{{phone.image}}" alt="phone image">
+
+  </div>
+  <div class="phone-info">
+    <h3>{{phone.brand}}  {{phone.name}}</h3>
+    <button (click)='delete()'>Delete</button>
+    <div class="specs" *ngIf='phone.specs.length > 0'>
+      <p>Specs:</p>
+      <ul>
+        <li class="" *ngFor='let spec of phone.specs'>
+          {{spec}}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
